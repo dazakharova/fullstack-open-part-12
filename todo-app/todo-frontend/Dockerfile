@@ -9,7 +9,7 @@ RUN npm ci
 
 RUN npm run test:ci
 
-ENV VITE_BACKEND_URL=http://localhost:3000
+ENV VITE_BACKEND_URL=/api
 
 RUN npm run build
 
