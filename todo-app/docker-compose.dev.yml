@@ -1,5 +1,5 @@
 services:
-  app:
+  todo-frontend:
     image: todo-frontend-dev
     build:
       context: ./todo-frontend
@@ -18,4 +18,4 @@ services:
       - 8080:80
     container_name: reverse-proxy
     depends_on:
-      - app
+      - todo-frontend
