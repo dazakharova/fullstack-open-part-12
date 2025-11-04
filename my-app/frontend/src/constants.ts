@@ -1,1 +1,1 @@
-export const apiBaseUrl = import.meta.env.VITE_BACKEND_URL + '/api';
+export const apiBaseUrl = import.meta.env.VITE_BACKEND_URL;

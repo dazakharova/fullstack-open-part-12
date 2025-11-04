@@ -8,13 +8,13 @@ app.use(cors());
 
 const PORT = 3001;
 
-app.get('/api/ping', (_req, res) => {
+app.get('/ping', (_req, res) => {
     console.log('someone pinged here');
     res.send('pong');
 });
 
-app.use('/api/diagnoses', diagnosesRouter);
-app.use('/api/patients', paientsRouter);
+app.use('/diagnoses', diagnosesRouter);
+app.use('/patients', paientsRouter);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
